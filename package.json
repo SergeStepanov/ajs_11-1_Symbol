@@ -1,0 +1,50 @@
+{
+  "name": "ajs_11-1_symbol",
+  "version": "1.0.0",
+  "description": "ajs 11.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest --coverage",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist",
+    "aufix": "npm audit fix --force"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeStepanov/ajs_11-1_Symbol.git"
+  },
+  "author": "Serge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeStepanov/ajs_11-1_Symbol/issues"
+  },
+  "homepage": "https://github.com/SergeStepanov/ajs_11-1_Symbol#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-jest": "^27.3.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^27.3.1",
+    "live-server": "^1.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "neo-async": "^2.6.2"
+  }
+}
